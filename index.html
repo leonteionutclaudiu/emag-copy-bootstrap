@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eMAG - Bootstrap Version</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/emag-icon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+
+    <link href="style.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg sticky-top overflow-hidden me-auto navigare-expand"
+      style="background-color: #f2f2f7"
+    >
+      <div class="container-fluid fs-5 fw-semibold">
+        <img class="logo" src="images/emag-logo.png" alt="eMAG Logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse navigare"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link link-color1"
+                aria-current="page"
+                href="#laptopuri"
+                >Laptop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-color1" href="#televizoare"
+                >Televizoare</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-color1"
+                aria-current="page"
+                href="#telefoane"
+                >Telefoane</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-color-emag-genius"
+                aria-current="page"
+                href="#genius"
+                >eMAG Genius</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-color2"
+                aria-current="page"
+                href="signin/signin.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                  />
+                </svg>
+                Contul meu</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link link-color3 me-5"
+                aria-current="page"
+                href="./checkout/checkout.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-basket"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"
+                  />
+                </svg>
+                Coș</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex form-nav align-items-center" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Începe o nouă căutare"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero overflow-hidden mb-5 position-relative">
+      <!-- Hero -->
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: linear-gradient(
+              rgba(34, 34, 34, 0.85),
+              rgba(34, 34, 34, 0.85)
+            ),
+            url('images/emag_hero.jpg');
+          min-height: 100vh;
+          min-width: 100vw;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-5 fw-bold">
+              Cele mai bune preturi , 0% dobanda la ratele produselor
+            </h1>
+            <div class="hero-div-h3">
+              <h3 class="mb-5 fs-2">
+                Magazinul eMAG se prezinta atat on-line,cat si fizic,in diferite
+                orase. eMAG iti sta la dispozitie oferindu-ti cele mai tari
+                reduceri,promotii si livrarea in maxim 3 zile.
+              </h3>
+            </div>
+            <a
+              class="btn btn-outline-success btn-lg livrare-gratuita fs-2"
+              href="#exampleInputEmail1"
+              role="button"
+              >Vreau livrare gratuita !</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Hero -->
+    </section>
+
+    <section class="genius-section overflow-hidden">
+      <img
+        class="mw-100 mh-100"
+        src="images/emag-genius.jpeg"
+        alt="eMAG Genius Photo"
+        id="genius"
+      />
+
+      <div
+        class="div-genius d-flex justify-content-center gap-4 flex-wrap text-center"
+      >
+        <div
+          class="card shadow-lg p-2 mb-5 bg-body rounded"
+          style="width: 12rem"
+        >
+          <div class="card-body">
+            <img
+              class="genius-section-img"
+              src="images/emag-logo.png"
+              alt="eMAG Logo Photo"
+            />
+            <p class="genius-p">Livrare gratuită</p>
+            <p class="genius-p">Oferte exclusive</p>
+            <p class="genius-p">Livrare prioritară</p>
+            <p class="genius-p" id="livrare">Retur în 60 de zile</p>
+          </div>
+        </div>
+
+        <div
+          class="card shadow-lg p-3 mb-5 bg-body rounded"
+          style="width: 12rem"
+        >
+          <div class="card-body">
+            <img
+              class="genius-section-img"
+              src="images/tazz-logo.jpeg"
+              alt="Tazz Logo Photo"
+            />
+            <p class="genius-p">Livrare gratuită</p>
+            <p class="genius-p">Oferte exclusive</p>
+          </div>
+        </div>
+
+        <div
+          class="card shadow-lg p-3 mb-5 bg-body rounded"
+          style="width: 12rem"
+        >
+          <div class="card-body">
+            <img
+              class="genius-section-img"
+              src="images/fashiondays-logo.jpeg"
+              alt="FashionDays Logo Photo"
+            />
+            <p class="genius-p">Livrare gratuită</p>
+            <p class="genius-p">Oferte exclusive</p>
+            <p class="genius-p">Livrare prioritară</p>
+            <p class="genius-p">Retur în 60 de zile</p>
+          </div>
+        </div>
+
+        <div
+          class="card shadow-lg p-3 mb-5 bg-body rounded"
+          style="width: 12rem"
+        >
+          <div class="card-body">
+            <img
+              class="genius-section-img"
+              src="images/Freshful-logo.jpeg"
+              alt="eMAG-Genius Logo Photo"
+            />
+            <p class="genius-p">Livrare gratuită</p>
+            <p class="genius-p">Oferte exclusive</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="genius-pasi mb-5">
+      <h2 class="text-center">Activează Genius în 4 pași</h2>
+      <div
+        class="d-flex flex-wrap justify-content-center align-items-center gap-5"
+      >
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            class="pasi-img"
+            src="images/step-1.jpeg"
+            alt="step1 for genius register photo"
+          />
+          <p class="text-center fw-semibold fs-5">
+            Încearcă gratuit sau alege Genius 12 luni
+          </p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="44"
+          fill="rgba(87, 69, 69, 0.385)"
+          class="bi bi-arrow-right-short"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+          />
+        </svg>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            class="pasi-img"
+            src="images/step-2.jpeg"
+            alt="step2 for genius register photo"
+          />
+          <p class="text-center fw-semibold fs-5">
+            Activează abonamentul din contul tău eMAG.
+          </p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="44"
+          fill="rgba(87, 69, 69, 0.385)"
+          class="bi bi-arrow-right-short"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+          />
+        </svg>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            class="pasi-img"
+            src="images/step-3.jpeg"
+            alt="step3 for genius register photo"
+          />
+          <p class="text-center fw-semibold fs-5">
+            Loghează-te cu contul eMAG în Tazz, Fashion Days și Freshful
+          </p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="44"
+          fill="rgba(87, 69, 69, 0.385)"
+          class="bi bi-arrow-right-short"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+          />
+        </svg>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            class="pasi-img"
+            src="images/step-4.jpeg"
+            alt="step4 for genius register photo"
+          />
+          <p class="text-center fw-semibold fs-5">
+            Gata! 🙂 Te bucuri de toate beneficiile Genius în cele 4 aplicații!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboneaza mb-5">
+      <form class="mx-auto w-50">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+              />
+            </svg>
+            Adresa de e-mail</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="ex. leonteionut98@yahoo.com"
+          />
+          <div id="emailHelp" class="form-text">
+            Prin abonarea la newsletter eMAG confirm ca am peste 16 ani.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="nume" class="form-label"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+              />
+            </svg>
+            Nume si prenume</label
+          >
+          <input
+            type="text"
+            placeholder="ex. Leonte Ionut-Claudiu"
+            class="form-control"
+            id="nume"
+          />
+        </div>
+        <div class="mb-3">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Trimite-mi ghidul pentru
+            <strong>obtinerea eMAG Genius. </strong></label
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary s fs-3 mb-4">
+          Abonează-te
+        </button>
+      </form>
+    </section>
+
+    <div class="accordion ms-auto me-auto" id="accordionExample">
+      <h2 class="text-center">Ce ar trebui să mai știi</h2>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-question-circle me-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+              />
+            </svg>
+            Ce este Genius?
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Genius este un serviciu pe bază de subscripție platită care oferă
+            livrare gratuită, oferte exclusive și alte beneficii în aplicațiile
+            eMAG, Tazz, Fashion Days și Freshful. Poți să încerci gratuit Genius
+            timp de 30 de zile.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-question-circle me-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+              />
+            </svg>
+            Ce produse sunt acoperite de livrarea gratuita?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Pe eMAG și Fashion Days, transportul este
+            <strong>gratuit</strong> la easybox, poștă sau la showroom pentru
+            comenzile <strong>care contin produse Genius</strong>, indiferent de
+            valoarea totală a acestora.<br />
+            Pentru comenzile livrate prin curier, transportul este gratuit dacă
+            valoarea cumulată a produselor Genius din coș este de minimum 100 de
+            lei. <br />Pe Tazz, ai transport gratuit pentru toate comenzile
+            peste 50 de lei de la restaurantele partenere Genius sau peste 100
+            de lei la magazinele partenere Genius. <br />Pe Freshful ai
+            transport gratuit pentru toate comenzile peste 200 de lei
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-question-circle me-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+              />
+            </svg>
+            Cat de rapida este livrarea?
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>eMAG și Fashion Days</strong> Livrare azi, gratuit, pentru
+            comenzile cu produse Genius vândute de eMAG sau Fashion Days,
+            plasate până la ora 12:30, cu livrare în București.<br />
+            Livrare a doua zi, gratuit, pentru comenzile plasate până la ora
+            22:00, de duminică până vineri (pentru orașele București, Buzău,
+            Brașov, Brăila, Cluj-Napoca, Craiova, Constanța, Galați, Iași,
+            Timișoara, Pitești, Ploiești, Bacău, Râmnnicu Vâlcea, Târgoviște și
+            jud. Ilfov) și pentru comenzile plasate până la ora 15:30 (pentru
+            restul orașelor). <br />În București, livrarea produselor cu
+            beneficii Genius se face a doua zi 7 zile din 7.<br /><strong
+              >Tazz</strong
+            >
+            Livrare în maximum o oră de la plasarea și aprobarea comenzii. În
+            intervalele foarte aglomerate, timpul de livrare poate varia, însă
+            ai la dispoziție estimatul de livrare pentru orice restaurant sau
+            magazin partener, ca să alegi în funcție de nevoile tale.<br /><strong
+              >Freshful</strong
+            >
+            Livrare rapidă în București și Ilfov, în funcție de intervalul orar
+            pe care îl alegi pentru primirea comenzii. Ai la dispoziție opțiuni
+            de livrare zilnic, de dimineața până seara târziu.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="blackfriday mb-5 mt-5">
+      <h3 class="text-center">
+        Descoperă câteva dintre ofertele de BlackFriday
+      </h3>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carusel"
+        data-bs-ride="true"
+      >
+        <div class="carousel-inner mb-5">
+          <div class="carousel-item active">
+            <img
+              src="images/bf1.jpg"
+              class="d-block w-75 center"
+              alt="Black Friday Deal Photo"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/bf2.jpg"
+              class="d-block w-75 center"
+              alt="Black Friday Deal Photo"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/bf3.jpg"
+              class="d-block w-75 center"
+              alt="Black Friday Deal Photo"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <div
+      class="whitespace-div"
+      id="laptopuri"
+      style="height: 200px; width: 100vw"
+    ></div>
+
+    <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        fill="currentColor"
+        class="bi bi-laptop"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"
+        />
+      </svg>
+      <h2 class="prod-h2">Laptop-uri</h2>
+    </div>
+
+    <section
+      class="mx-5 mt-5 ms-auto d-flex flex-wrap justify-content-center gap-5"
+    >
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/laptop1.jpeg"
+          alt="photo of laptop"
+        />
+        <div class="card-body">
+          <h5 class="card-title">ASUS VivoBook 14 K413EA</h5>
+          <p class="card-text">
+            Laptop ultraportabil ASUS VivoBook 14 K413EA cu procesor Intel®
+            Core™ i5-1135G7, 14" Full HD, 8GB, SSD 512GB, Intel Iris Xᵉ
+            Graphics, No OS, Transparent Silver
+          </p>
+          <p class="prod-price">1.999,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="checkout/checkout.html" class="btn btn-primary ms-3"
+              >Adauga in Cos</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/laptop2.jpeg"
+          alt="photo of laptop"
+        />
+        <div class="card-body">
+          <h5 class="card-title">ASUS X515EA</h5>
+          <p class="card-text">
+            Laptop ASUS X515EA cu procesor cu procesor Intel® Core™ i5-1135G7,
+            15.6", Full HD, 8GB, 512GB SSD, Intel Iris Xᵉ Graphics, Windows 11
+            Home, Slate Grey
+          </p>
+          <p class="prod-price">2.499,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/laptop3.jpeg"
+          alt="photo of laptop"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Lenovo Legion 5 15IMH6</h5>
+          <p class="card-text">
+            Laptop Gaming Lenovo Legion 5 15IMH6 cu procesor Intel Core
+            i7-10750H, 15.6", Full HD, 120Hz, 16GB, 512GB SSD, NVIDIA GeForce
+            RTX 3050 4GB, No OS, Phantom Black
+          </p>
+          <p class="prod-price">3.999,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/laptop4.jpeg"
+          alt="photo of laptop"
+        />
+        <div class="card-body">
+          <h5 class="card-title">ASUS TUF A15 FA507RM</h5>
+          <p class="card-text">
+            Laptop Gaming ASUS TUF A15 FA507RM cu procesor AMD Ryzen™ 7 6800H,
+            15.6", Full HD, 300Hz, 16GB, 1TB SSD, NVIDIA® GeForce RTX™ 3060, No
+            OS, Jaeger Gray
+          </p>
+          <p class="prod-price">5.649,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/laptop5.jpeg"
+          alt="photo of laptop"
+        />
+        <div class="card-body">
+          <h5 class="card-title">ASUS ROG Strix G15 G513RW</h5>
+          <p class="card-text">
+            Laptop Gaming ASUS ROG Strix G15 G513RW cu procesor AMD Ryzen™ 9
+            6900HX, 15.6", Full HD, 300Hz, 16GB, 1TB SSD, NVIDIA® GeForce RTX™
+            3070 Ti, No Os, Black
+          </p>
+          <p class="prod-price">7.789,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="whitespace-div"
+      id="televizoare"
+      style="height: 200px; width: 100vw"
+    ></div>
+
+    <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        fill="currentColor"
+        class="bi bi-tv"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"
+        />
+      </svg>
+      <h2 class="prod-h2">Televizoare</h2>
+    </div>
+    <section
+      class="mx-5 mt-5 mb-5 ms-auto d-flex flex-wrap justify-content-center gap-5"
+    >
+      <div class="card" style="max-width: 18rem">
+        <img class="card-img-top" src="images/tv1.jpeg" alt="photo of tv" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Televizor LED Star-Light, 80 cm, 32DM3500, HD, Clasa F
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">499,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img class="card-img-top" src="images/tv2.jpeg" alt="photo of tv" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Televizor LG 50UP75003LF, 126 cm, Smart, 4K Ultra HD, LED, Clasa G
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">1.599,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img class="card-img-top" src="images/tv3.jpg" alt="photo of tv" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Televizor Samsung 50TU7092, 125 cm, Smart, 4K Ultra HD, LED, Clasa G
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">1.736,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img class="card-img-top" src="images/tv4.jpg" alt="photo of tv" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Televizor Philips OLED 48OLED935/12, 121 cm, Smart Android, 4K Ultra
+            HD, 100HZ, Clasa G
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">2.999,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="whitespace-div"
+      id="telefoane"
+      style="height: 200px; width: 100vw"
+    ></div>
+
+    <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        fill="currentColor"
+        class="bi bi-phone"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"
+        />
+        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+      </svg>
+      <h2 class="prod-h2">Telefoane</h2>
+    </div>
+
+    <section
+      class="mx-5 mt-5 ms-auto d-flex flex-wrap justify-content-center gap-5"
+    >
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone1.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Samsung Galaxy A53, Dual SIM, 6GB RAM, 128GB, 5G,
+            Awesome Black
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">1.449,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone2.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Nokia 150 (2020), Dual Sim, Cyan
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">180,00 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone3.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Telefon mobil Apple iPhone 11, 64GB, White</h5>
+          <p class="card-text"></p>
+          <p class="prod-price">2.329,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone4.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Samsung Galaxy A03, 64GB, 4GB RAM, 4G, Black
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">579,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone5.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon Mobil Huawei Nova 9 SE, Dual SIM, 8GB RAM, 128GB, 4G,
+            Midnight Black
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">999,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone6.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Apple iPhone 13 Pro Max, 128GB, 5G, Alpine GreenF
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">6.199,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone7.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Samsung Galaxy A32, Dual SIM, 128GB, 4G, Lavender
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">1.054,77 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone8.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Samsung Galaxy S22 Ultra, Dual SIM, 256GB, 12GB RAM,
+            5G, Burgundy
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">6.299,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone9.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Samsung Galaxy Z Fold4, 12GB RAM, 256GB, 5G, Phantom
+            Black
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">8.899,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone10.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Realme GT NEO 2, Dual SIM, 8GB RAM, 128GB, 5G, Black
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">2199,99 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 18rem">
+        <img
+          class="card-img-top"
+          src="images/phone11.jpeg"
+          alt="photo of smartphone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Telefon mobil Xiaomi Redmi Note 11 Pro+ 5G, Dual Sim, 128GB, 8GB
+            RAM, Black
+          </h5>
+          <p class="card-text"></p>
+          <p class="prod-price">2.150,00 Lei</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <a href="#" class="btn btn-primary ms-3">Adauga in Cos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="to-top-div">
+      <a class="btn-to-top" href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="whitespace-div" style="height: 200px; width: 100vw"></div>
+
+    <div
+      class="alert alert-warning alert-dismissible fade show cookie text-center me-0 ms-0 position-fixed bottom-0 popup-video overflow-hidden video-bottom-all-div"
+      role="alert"
+    >
+      <div class="video-bottom">
+        <iframe
+          src="https://www.youtube.com/embed/Tb4FCnrp3dY?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"
+          frameborder="0"
+          allow="autoplay; encrypted-media; "
+          style="width: 25vw; height: 25vh"
+          class="bottom-0"
+          allowfullscreen="true"
+        >
+        </iframe>
+      </div>
+      <button
+        type="button"
+        class="btn-close opacity-100"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div
+      class="alert alert-warning alert-dismissible fade show cookie text-center me-0 ms-0 position-fixed bottom-0"
+      role="alert"
+    >
+      <strong>ACEST SITE FOLOSESTE COOKIES</strong> <br />Acest website
+      foloseste cookie-uri proprii si de la terti pentru a furniza vizitatorilor
+      o experienta mult mai buna de navigare si servicii adaptate nevoilor si
+      interesului fiecaruia. In ceea ce numim "web 2.0", "cookie"-urile joaca un
+      rol important in facilitarea accesului si livrarii multiplelor servicii de
+      care utilizatorul se bucura pe internet, cum ar fi: Personalizarea
+      anumitor setari precum: limba in care este vizualizat un site, moneda in
+      care se exprima anumite preturi sau tarife, pastrarea optiunilor pentru
+      diverse produse (masuri, alte detalii etc) in cosul de cumparaturi (si
+      memorarea acestor optiuni) - generandu-se astfel flexibilitatea "cosului
+      de cumparaturi" (accesarea preferintelor vechi prin accesarea butonului
+      "inainte" si "inapoi") Cookie-urile ofera detinatorilor de site-uri un
+      feedback valoros asupra modului cum sunt utilizate site-urile lor de catre
+      utilizatori, astfel incat sa le poata face si mai eficiente si mai
+      accesibile pentru utilizatori. Permit aplicatiilor multimedia sau de alt
+      tip de pe alte site-uri sa fie incluse intr-un anumit site pentru a crea o
+      experienta de navigare mai valoroasa, mai utila si mai placuta;
+      Imbunatatesc eficienta publicitatii online.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <footer>
+      <div
+        class="linkuri-utile d-flex justify-content-between gap-3 p-4 flex-wrap"
+      >
+        <div class="footer-link d-flex flex-column">
+          <a
+            id="footer-first-link"
+            href="https://www.emag.ro/#footer_services-1"
+            >Servicii pentru clienti</a
+          >
+          <a
+            href="https://www.emag.ro/help/deschiderea-coletului-la-livrare/?ref=footer_1_1"
+            >Deschiderea coletului la livrare</a
+          >
+          <a
+            href="https://www.emag.ro/help/30-de-zile-drept-de-retur/?ref=footer_1_2"
+            >30 de zile drept de retur</a
+          >
+          <a
+            href="https://www.emag.ro/help/modalitati-de-plata?ref=footer_1_3#pay-in-installments"
+            >Plata cu cardul in rate fara dobanda</a
+          >
+          <a
+            href="https://www.emag.ro/help/modalitati-de-plata?ref=footer_1_4#pay-with-ecredit"
+            >Finantare in rate prin eCREDIT</a
+          >
+          <a
+            href="https://www.emag.ro/help/categorie/garantii-si-service/?ref=footer_1_5"
+            >Garantii si service</a
+          >
+          <a href="https://www.emag.ro/guide/black-friday?ref=footer_1_6"
+            >Black Friday eMAG</a
+          >
+        </div>
+
+        <div class="footer-link d-flex flex-column">
+          <a
+            id="footer-first-link"
+            href="https://www.emag.ro/#footer_services-2"
+            >Comenzi si livrare</a
+          >
+          <a
+            href="https://www.emag.ro/help/categorie/comenzi-si-livrare/informatii-despre-contul-tau/?ref=footer_2_1"
+            >Contul meu la eMAG</a
+          >
+          <a
+            href="https://www.emag.ro/help/livrarea-comenzilor-emag/?ref=footer_2_2"
+            >Livrarea comenzilor</a
+          >
+          <a href="https://www.emag.ro/lps/corporate?ref=footer_2_3"
+            >eMAG Corporate</a
+          >
+          <a
+            href="https://www.emag.ro/help/despre-emag-marketplace/?ref=footer_2_4"
+            >eMAG Marketplace</a
+          >
+          <a href="https://www.emag.ro/help/modalitati-de-plata?ref=footer_2_5"
+            >Modalitati de finantare si plata</a
+          >
+          <a
+            href="https://marketplace-leads.emag.ro/?utm_source=eMAG.ro&utm_medium=referral&utm_campaign=footer?ref=footer_2_6"
+            >Vreau sa vand pe eMAG</a
+          >
+        </div>
+
+        <div class="footer-link d-flex flex-column">
+          <a
+            id="footer-first-link"
+            href="https://www.emag.ro/#footer_services-3"
+            >Suport clienti</a
+          >
+          <a href="https://www.emag.ro/user/return_form?ref=footer_3_1"
+            >Formular returnare produs</a
+          >
+          <a href="https://www.emag.ro/help/contact/?ref=footer_3_2">Contact</a>
+          <a
+            href="https://www.emag.ro/help/anunt-rechemare-produs-neconform/?ref=footer_3_3"
+            >Anunturi rechemare produse</a
+          >
+          <a
+            href="https://www.emag.ro/help/conditii-generale-privind-furnizarea-serviciilor-postale/?ref=footer_3_4"
+            >Conditii generale privind furnizarea serviciilor postale</a
+          >
+          <a href="https://anpc.ro/?ref=footer_3_5">ANPC</a>
+          <a href="https://anpc.ro/ce-este-sal/?ref=footer_3_6">ANPC - SAL</a>
+        </div>
+
+        <div class="footer-link d-flex flex-column">
+          <a
+            id="footer-first-link"
+            href="https://www.emag.ro/#footer_services-4"
+            >eMAG.ro</a
+          >
+          <a href="https://about.emag.ro/?ref=footer_4_1">Despre eMAG</a>
+          <a href="https://www.emag.ro/help/termeni-si-conditii/?ref=footer_4_2"
+            >Termene si conditii</a
+          >
+          <a
+            href="https://www.emag.ro/help/prelucrarea-datelor-cu-caracter-personal?ref=footer_4_3"
+            >Prelucrarea datelor cu caracter personal</a
+          >
+          <a
+            href="https://www.emag.ro/help/politica-de-utilizare-cookie-uri?ref=footer_4_4"
+            >Politica de utilizare Cookie-uri</a
+          >
+          <a
+            href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO?ref=footer_4_5"
+            >Solutionarea Online a litigiilor</a
+          >
+          <a
+            href="https://www.emag.ro/lps/fundatia-noua-ne-pasa-centrele-noua-ne-pasa?ref=footer_4_6"
+            >Programele Fundatiei Noua ne pasa</a
+          >
+        </div>
+      </div>
+      <div class="div-footer-img mt-5">
+        <img class="logo-footer" src="images/emag-logo.png" alt="logo emag" />
+        <p class="text-center fw-semibold fs-6">
+          &copy; Copyright 2022 eMAG created by Leonte Ionuț Claudiu. All rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

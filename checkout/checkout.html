@@ -1,0 +1,465 @@
+<!-- JAVASCRIPTS DISABLED DOWN-PAGE ! ONLY HTML AND CSS ACTIVE -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.101.0" />
+    <title>eMAG - Coș de cumparaturi</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/emag-icon.ico" />
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/checkout/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img
+            class="d-block mx-auto mb-4"
+            src="../images/plata.jpeg"
+            alt=""
+            width="120"
+            height=""
+          />
+          <h2>Coșul tău de cumpărături</h2>
+          <p class="lead">
+            Completează câmpurile de mai jos pentru a finaliza comanda dorită !
+          </p>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+              role="progressbar"
+              aria-label="Success striped example"
+              style="width: 75%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Comanda ta este aproape finalizată
+            </div>
+          </div>
+
+          <h4 class="alert-heading mt-3">Încă puțin!</h4>
+          <p>
+            Doar introdu datele pentru livrarea comenzii și noi vom începe să ne
+            ocupăm de livrarea comenzii într-un timp foarte scurt !
+          </p>
+          <hr />
+          <p class="mb-0"></p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Coșul tău</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">1x</h6>
+                  <small class="text-muted"
+                    >Televizor Philips OLED 48OLED935/12, 121 cm, Smart Android,
+                    4K Ultra HD, 100HZ, Clasa G</small
+                  >
+                </div>
+                <span class="text-muted">2.999,99 Lei</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">1x</h6>
+                  <small class="text-muted"
+                    >Laptop ultraportabil ASUS VivoBook 14 K413EA cu procesor
+                    Intel® Core™ i5-1135G7, 14" Full HD, 8GB, SSD 512GB, Intel
+                    Iris Xᵉ Graphics, No OS, Transparent Silver</small
+                  >
+                </div>
+                <span class="text-muted">1.999,99 Lei</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">1x</h6>
+                  <small class="text-muted"
+                    >Telefon mobil Samsung Galaxy A53, Dual SIM, 6GB RAM, 128GB,
+                    5G, Awesome Black</small
+                  >
+                </div>
+                <span class="text-muted">1.449,99 Lei</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between bg-light"
+              >
+                <div class="text-success">
+                  <h6 class="my-0">Cod promoțional</h6>
+                  <small>LEONTE500</small>
+                </div>
+                <span class="text-success">−500 LEI</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (LEI)</span>
+                <strong>5,949.97 LEI</strong>
+              </li>
+            </ul>
+
+            <form class="card p-2">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Cod promo"
+                />
+                <button type="submit" class="btn btn-secondary">
+                  Folosește codul
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Adresa de facturare</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nume</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Leonte"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Un nume valid este obligatoriu.
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Prenume</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Ionuț-Claudiu"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Un prenume valid este obligatoriu.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="username" class="form-label"
+                    >Nume de utilizator</label
+                  >
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Nume de utilizator"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Username-ul tău este obligatoriu.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label"
+                    >Email <span class="text-muted">(Opțional)</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="leonteionut98@yahoo.com"
+                  />
+                  <div class="invalid-feedback">
+                    Te rog introdu o adresă de email validă pentru urmărirea
+                    comenzii.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Adresă</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Str.Unirii 32"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Te rog introdu adresa ta de livrare.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address2" class="form-label"
+                    >Adresa 2 <span class="text-muted">(Opțional)</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address2"
+                    placeholder="Apartment, Scara, Etaj"
+                  />
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Cod poștal</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zip"
+                    placeholder="810313"
+                    required
+                  />
+                  <div class="invalid-feedback">Cod poștal obligatoriu.</div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="same-address"
+                />
+                <label class="form-check-label" for="same-address"
+                  >Adresa de livrare este aceeași cu adresa mea de
+                  facturare</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="save-info"
+                />
+                <label class="form-check-label" for="save-info"
+                  >Salvează aceste informații pentru data viitoare</label
+                >
+              </div>
+
+              <hr class="my-4" />
+
+              <h4 class="mb-3">Metoda de plată</h4>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input
+                    id="credit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="form-check-input"
+                    checked
+                    required
+                  />
+                  <label class="form-check-label" for="credit"
+                    >Card de credit</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    id="debit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="form-check-input"
+                    required
+                  />
+                  <label class="form-check-label" for="debit"
+                    >Card de debit</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    id="paypal"
+                    name="paymentMethod"
+                    type="radio"
+                    class="form-check-input"
+                    required
+                  />
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label"
+                    >Numele de pe card</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-name"
+                    placeholder=""
+                    required
+                  />
+                  <small class="text-muted"
+                    >Introduceți tot numele exact așa cum este afișat pe
+                    card</small
+                  >
+                  <div class="invalid-feedback">
+                    Numele de pe card este obligatoriu.
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label"
+                    >Numărul cardului</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-number"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Numărul cardului este obligatoriu.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label"
+                    >Data expirării</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-expiration"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Data expirării este obligatorie.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-cvv"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Codul CVV este obligatoriu.
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <button
+                class="w-100 btn btn-primary btn-lg"
+                onclick="location.href='../index.html'"
+                type="button"
+              >
+                Continuă către plată
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">
+          &copy; Copyright 2022 eMAG created by Leonte Ionuț Claudiu. All rights
+          Reserved
+        </p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Politica de Confidențialitate</a>
+          </li>
+          <li class="list-inline-item"><a href="#">Termeni și Condiții</a></li>
+          <li class="list-inline-item"><a href="#">Suport</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- <script src="form-validation.js"></script> -->
+  </body>
+</html>
